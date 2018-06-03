@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="main-logo">
+          <a href="index.html"><img src="img/logo.svg" alt="Логотип магазина «Девайс»"></a>
+        </div>
+        <span class="search">Поиск по сайту</span>
+        <span class="username">Валентин Петухов</span> <span class="logout">Выйти</span>
+        <ul class="secondary-menu">
+          <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
+          <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="main-menu">
+          <li class="main-menu-item main-menu-catalogue"><a href="catalogue.html">Каталог товаров</a>
+            <ul class="catalogue">
+              <li class="catalogue-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalogue-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalogue-item"><a href="#">Экшн-камеры</a></li>
+              <li class="catalogue-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalogue-item"><a href="#">Умные часы</a></li>
+              <li class="catalogue-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item main-menu-delivery"><a href="#">Доставка</a></li>
+          <li class="main-menu-item main-menu-guarantee"><a href="#">Гарантия</a></li>
+          <li class="main-menu-item main-menu-contanct"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+          <li class="breadcrumbs-list"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-list"><a href="catalogue.html">Каталог товаров</a></li>
+          <li class="breadcrumbs-list">Моноподы для селфи</li>
+      </ul>
+      <section class="catalogue-container">
+        <section class="filter">
+            <h2>Фильтр</h2>
+            <p>Здесь будет форма</p>
+            <!-- Здесь будет форма -->
+            <input type="button" class="button" value="Показать">
+        </section>
+        <section class="sort">
+            <h2>Сортировка</h2>
+            <ul class="sort-list">
+                <li><a class="sort-list-item active" href="#">По цене</a></li>
+                <li><a class="sort-list-item" href="#">По типу</a></li>
+                <li><a class="sort-list-item" href="#">По популярности</a></li>
+            </ul>
+            <ul class="sort-order">
+                <li><a class="sort-order-asc active" href="#">По возрастанию</a></li>
+                <li><a class="sort-order-desc " href="#">По убыванию</a></li>
+            </ul>
+        </section>
+        <section class="gadgets">
+            <h2 class="visually-hidden">Список гаджетов</h2>
+            <ul class="gadgets-list">
+                <li class="gadget-item">
+                    <div class="gadget-item-picture">
+                        <div class="gadget-image">
+                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                        </div>
+                        <div class="gadget-buy">
+                            <a href="#" class="button">В корзину</a>
+                            <a href="#" class="compare">Добавить к сравнению</a>
+                        </div>
+                    </div>
+                    <p><span class="gadget-name">Любительская селфи-палка</span> <span class="gadget-price">500 руб.</span></p>
+                </li>
+                <li class="gadget-item">
+                    <div class="gadget-item-picture">
+                        <div class="gadget-image">
+                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                        </div>
+                        <div class="gadget-buy">
+                            <a href="#" class="button">В корзину</a>
+                            <a href="#" class="compare">Добавить к сравнению</a>
+                        </div>
+                    </div>
+                    <p><span class="gadget-name">Профессиональная селфи-палка </span> <span class="gadget-price">1 500 руб.</span></p>
+                </li>
+                <li class="gadget-item">
+                    <div class="gadget-item-picture">
+                        <div class="gadget-image">
+                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                        </div>
+                        <div class="gadget-buy">
+                            <a href="#" class="button">В корзину</a>
+                            <a href="#" class="compare">Добавить к сравнению</a>
+                        </div>
+                    </div>
+                    <p><span class="gadget-name">Непотопляемая селфи-палка</span> <span class="gadget-price">2 500 руб.</span></p>
+                </li>
+                <li class="gadget-item">
+                    <div class="gadget-item-picture">
+                        <div class="gadget-image">
+                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                        </div>
+                        <div class="gadget-buy">
+                            <a href="#" class="button">В корзину</a>
+                            <a href="#" class="compare">Добавить к сравнению</a>
+                        </div>
+                    </div>
+                    <p><span class="gadget-name">Селфи-палка «Следуй за мной»</span> <span class="gadget-price">4 900 руб.</span></p>
+                </li>
+            </ul>
+        </section>
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-active"><a href="#">Назад</a></li>
+            <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-active"><a href="#">Вперед</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="address">
+        <p><a href="index.html"><img src="img/logo.svg" alt="Логотип магазина «Девайс»"></a></p>
+        <p>г. Москва, ул. Строителей, 15</p>
+      </div>
+      <div class="services-social">
+        <div class="footer-services">
+          <ul class="footer-services-list">
+            <li class="footer-services-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-services-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="footer-services-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul class="social-list">
+            <li><a class="social-item social-item-fb" href="#">Фейсбук</a></li>
+            <li><a class="social-item social-item-in" href="#">Инстаграм</a></li>
+            <li><a class="social-item social-item-tw" href="#">Твиттер</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu-list">
+          <li><a class="footer-menu-item" href="#"><span class="username">Валентин Петухов</span> <a class="footer-menu-item" href="#"><span class="logout">Выйти</span></a></li>
+          <li><a class="footer-menu-item" href="#">Сравнить</a></li>
+          <li><a class="footer-menu-item" href="#">Корзина</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-copyright">
+          <a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+        </p>
+      </div>
+    </footer>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <!-- Здесь будет форма-->
+      <p>Ваше имя:</p>
+      <p>Ваш e-mail:</p>
+      <p>Текст письма:</p>
+      <p><input type="submit" class="button" value="Отправить"></p>
+      <span class="modal-close">x</span>
+    </section>
+    <section class="map-popup">
+      <h2 class="visually-hidden">Наш магазин на карте</h2>
+      <!-- Здесь будет карта -->
+      <p>Здесь будет карта</p>
+      <span class="modal-close">x</span>
+    </section>
+  </body>
+</html>
