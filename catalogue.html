@@ -5,17 +5,18 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="main-logo">
-          <a href="index.html"><img src="img/logo.svg" alt="Логотип магазина «Девайс»"></a>
+        <a class="header-logo" href="index.html">DEVICE</a>
+        <div class="user-menu">
+          <span class="search">Поиск по сайту</span>
+          <span class="username">Валентин Петухов</span> <span class="logout">Выйти</span>
+          <ul class="secondary-menu">
+            <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
+            <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
+          </ul>
         </div>
-        <span class="search">Поиск по сайту</span>
-        <span class="username">Валентин Петухов</span> <span class="logout">Выйти</span>
-        <ul class="secondary-menu">
-          <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
-          <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
-        </ul>
         <ul class="main-menu">
           <li class="main-menu-item main-menu-catalogue"><a href="catalogue.html">Каталог товаров</a>
             <ul class="catalogue">
@@ -33,6 +34,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
@@ -56,7 +58,7 @@
             </ul>
             <ul class="sort-order">
                 <li><a class="sort-order-asc active" href="#">По возрастанию</a></li>
-                <li><a class="sort-order-desc " href="#">По убыванию</a></li>
+                <li><a class="sort-order-desc" href="#">По убыванию</a></li>
             </ul>
         </section>
         <section class="gadgets">
@@ -65,50 +67,50 @@
                 <li class="gadget-item">
                     <div class="gadget-item-picture">
                         <div class="gadget-image">
-                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                            <a href="#"><img src="#" alt="Любительская селфи-палка"></a>
                         </div>
                         <div class="gadget-buy">
                             <a href="#" class="button">В корзину</a>
                             <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                     </div>
-                    <p><span class="gadget-name">Любительская селфи-палка</span> <span class="gadget-price">500 руб.</span></p>
+                    <span class="gadget-name">Любительская селфи-палка</span> <span class="gadget-price">500 руб.</span>
                 </li>
                 <li class="gadget-item">
                     <div class="gadget-item-picture">
                         <div class="gadget-image">
-                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                            <a href="#"><img src="#" alt="Профессиональная селфи-палка"></a>
                         </div>
                         <div class="gadget-buy">
                             <a href="#" class="button">В корзину</a>
                             <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                     </div>
-                    <p><span class="gadget-name">Профессиональная селфи-палка </span> <span class="gadget-price">1 500 руб.</span></p>
+                    <span class="gadget-name">Профессиональная селфи-палка</span> <span class="gadget-price">1 500 руб.</span>
                 </li>
                 <li class="gadget-item">
                     <div class="gadget-item-picture">
                         <div class="gadget-image">
-                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                            <a href="#"><img src="#" alt="Непотопляемая селфи-палка"></a>
                         </div>
                         <div class="gadget-buy">
                             <a href="#" class="button">В корзину</a>
                             <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                     </div>
-                    <p><span class="gadget-name">Непотопляемая селфи-палка</span> <span class="gadget-price">2 500 руб.</span></p>
+                    <span class="gadget-name">Непотопляемая селфи-палка</span> <span class="gadget-price">2 500 руб.</span>
                 </li>
                 <li class="gadget-item">
                     <div class="gadget-item-picture">
                         <div class="gadget-image">
-                            <a href="#"><img src="#" alt="Изображение товара"></a>
+                            <a href="#"><img src="#" alt="Селфи-палка «Следуй за мной»"></a>
                         </div>
                         <div class="gadget-buy">
                             <a href="#" class="button">В корзину</a>
                             <a href="#" class="compare">Добавить к сравнению</a>
                         </div>
                     </div>
-                    <p><span class="gadget-name">Селфи-палка «Следуй за мной»</span> <span class="gadget-price">4 900 руб.</span></p>
+                    <span class="gadget-name">Селфи-палка «Следуй за мной»</span> <span class="gadget-price">4 900 руб.</span>
                 </li>
             </ul>
         </section>
@@ -121,44 +123,40 @@
         </ul>
       </section>
     </main>
+
     <footer class="main-footer">
-      <div class="address">
-        <p><a href="index.html"><img src="img/logo.svg" alt="Логотип магазина «Девайс»"></a></p>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </div>
-      <div class="services-social">
-        <div class="footer-services">
-          <ul class="footer-services-list">
-            <li class="footer-services-item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="footer-services-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="footer-services-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social">
-          <ul class="social-list">
-            <li><a class="social-item social-item-fb" href="#">Фейсбук</a></li>
-            <li><a class="social-item social-item-in" href="#">Инстаграм</a></li>
-            <li><a class="social-item social-item-tw" href="#">Твиттер</a></li>
-          </ul>
-        </div>
-      </div>
       <div class="footer-menu">
+        <a class="footer-logo" href="index.html">DEVICE</a>
         <ul class="footer-menu-list">
           <li><a class="footer-menu-item" href="#"><span class="username">Валентин Петухов</span> <a class="footer-menu-item" href="#"><span class="logout">Выйти</span></a></li>
           <li><a class="footer-menu-item" href="#">Сравнить</a></li>
           <li><a class="footer-menu-item" href="#">Корзина</a></li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <p class="footer-copyright">
-          <a href="https://htmlacademy.ru" class="button">HTML Academy</a>
-        </p>
+      </div>
+      <div class="footer-contacts-services">
+        <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-services-list">
+          <li class="footer-services-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer-services-item">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="footer-services-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-social">
+        <ul class="social-list">
+          <li><a class="social-item social-item-fb" href="#">Фейсбук</a></li>
+          <li><a class="social-item social-item-in" href="#">Инстаграм</a></li>
+          <li><a class="social-item social-item-tw" href="#">Твиттер</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="acacemy-copyright">HTML Academy</a>
       </div>
     </footer>
+
   </body>
 </html>
