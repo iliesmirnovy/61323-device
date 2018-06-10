@@ -9,9 +9,18 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo" href="index.html">DEVICE</a>
-        <div class="user-menu">
-          <span class="search">Поиск по сайту</span>
-          <span class="username">Валентин Петухов</span> <span class="logout">Выйти</span>
+        <div class="user-menu-container">
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <p class="header-search-item">
+              <input type="text" name="search" id="header-search" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+              <button class="visually-hidden" type="submit">Искать</button>
+            </p>
+          </form>
+          <ul class="user-menu">
+            <li class="user-menu-item"><a class="username" href="#">Валентин Петухов</a></li>
+            <li class="user-menu-item"><a class="logout-link" href="#">Выйти</a></li>
+          </ul>
           <ul class="secondary-menu">
             <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
             <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
@@ -45,9 +54,51 @@
       <section class="catalogue-container">
         <section class="filter">
             <h2>Фильтр</h2>
-            <p>Здесь будет форма</p>
-            <!-- Здесь будет форма -->
-            <input type="button" class="button" value="Показать">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+                <p class="filter-item">
+                    <span class="filter-name">Стоимость</span>
+                    <input type="range" name="cost-range" id="costRange" min="0" max="10000" step="100">
+                </p>
+                <p class="filter-item">
+                    <span class="filter-name">Цвет</span>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-black" id="filter-black" checked>
+                            <label for="filter-blak">Черный</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-white" id="filter-white">
+                            <label for="filter-blak">Белый</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-blue" id="filter-blue" checked>
+                            <label for="filter-blak">Синий</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-red" id="filter-red" checked>
+                            <label for="filter-blak">Красный</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                            <label for="filter-blak">Розовый</label>
+                        </li>
+                    </ul>
+                </p>
+                <p class="filter-item">
+                    <span class="filter-name">Bluetooth</span>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
+                            <label for="bluetooth-yes">Есть</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="bluetooth-no">
+                            <label for="bluetooth-no">Нет</label>
+                        </li>
+                    </ul>
+                </p>
+                <button class="button" type="submit">Показать</button>
+            </form>
         </section>
         <section class="sort">
             <h2>Сортировка</h2>
@@ -100,7 +151,7 @@
                     </div>
                     <span class="gadget-name">Непотопляемая селфи-палка</span> <span class="gadget-price">2 500 руб.</span>
                 </li>
-                <li class="gadget-item">
+                <li class="gadget-item gadget-new">
                     <div class="gadget-item-picture">
                         <div class="gadget-image">
                             <a href="#"><img src="img/items/item-4.jpg" width="360" height="360" alt="Селфи-палка «Следуй за мной»"></a>
@@ -127,10 +178,13 @@
     <footer class="main-footer">
       <div class="footer-menu">
         <a class="footer-logo" href="index.html">DEVICE</a>
-        <ul class="footer-menu-list">
-          <li><a class="footer-menu-item" href="#"><span class="username">Валентин Петухов</span> <a class="footer-menu-item" href="#"><span class="logout">Выйти</span></a></li>
-          <li><a class="footer-menu-item" href="#">Сравнить</a></li>
-          <li><a class="footer-menu-item" href="#">Корзина</a></li>
+        <ul class="footer-user-menu">
+            <li class="footer-menu-item"><a class="username" href="#">Валентин Петухов</a></li>
+            <li class="footer-menu-item"><a class="logout-link" href="#">Выйти</a></li>
+        </ul>
+        <ul class="footer-secondary-menu">
+            <li class="footer-secondary-menu-item"><a class="menu-compare" href="#">Сравнить</a></li>
+            <li class="footer-secondary-menu-item"><a class="cart" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-contacts-services">

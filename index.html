@@ -9,9 +9,17 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo">DEVICE</a>
-        <div class="user-menu">
-          <span class="search">Поиск по сайту</span>
-          <span class="login">Войти</span>
+        <div class="user-menu-container">
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <p class="header-search-item">
+              <input type="text" name="search" id="header-search" placeholder="Поиск по сайту">
+              <label class="visually-hidden" for="header-search">Поиск по сайту</label>
+              <button class="visually-hidden" type="submit">Искать</button>
+            </p>
+          </form>
+          <ul class="user-menu">
+            <li class="user-menu-item"><a class="login-link" href="#">Войти</a></li>
+          </ul>
           <ul class="secondary-menu">
             <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
             <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
@@ -115,6 +123,20 @@
             </div>
           </li>
         </ul>
+        <ul class="slider-control">
+          <li class="slider-control-item">
+            <input class="visually-hidden" type="radio" id="slider-first" name="slider-control">
+            <label class="visually-hidden" for="slider-first">Первый слайд</label>
+          </li>
+          <li class="slider-control-item">
+            <input class="visually-hidden" type="radio" id="slider-second" name="slider-control">
+            <label class="visually-hidden" for="slider-second">Второй слайд</label>
+          </li>
+          <li class="slider-control-item">
+            <input class="visually-hidden" type="radio" id="slider-third" name="slider-control">
+            <label class="visually-hidden" for="slider-third">Третий слайд</label>
+          </li>
+        </ul>
       </section>
       <section class="popular">
         <h2 class="visually-hidden">Популярные категории товаров</h2>
@@ -184,20 +206,22 @@
       <section class="contact">
         <h2 class="contact-title">Контакты</h2>
         <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!-- Тут будет карта -->
-        <img src="img/contacts/map.jpg" width="560" height="222" alt="Наш магазин на карте">
-        <div>Тут будет карта</div>
-        <a href="#" class="button">Напишите нам</a>
+        <div class="contact-map">
+          <a class="contact-map-link" href="#"><img src="img/contacts/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург"></a>
+        </div>
+        <a class="button" href="#" >Напишите нам</a>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="footer-menu">
         <a class="footer-logo">DEVICE</a>
-        <ul class="footer-menu-list">
-          <li><a class="footer-menu-item" href="#">Войти</a></li>
-          <li><a class="footer-menu-item" href="#">Сравнить</a></li>
-          <li><a class="footer-menu-item" href="#">Корзина</a></li>
+        <ul class="footer-user-menu">
+            <li class="footer-menu-item"><a class="login-link" href="#">Войти</a></li>
+        </ul>
+        <ul class="footer-secondary-menu">
+            <li class="footer-secondary-menu-item"><a class="menu-compare" href="#">Сравнить</a></li>
+            <li class="footer-secondary-menu-item"><a class="cart" href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-contacts-services">
@@ -227,19 +251,27 @@
     
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма-->
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <p><input type="submit" class="button" value="Отправить"></p>
-      <span class="modal-close">x</span>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="text" name="e-mail" value="" placeholder="email@example.com">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-message">Текст письма:</label>
+          <textarea id="write-us-message" rows="5" name="message" value="" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Наш магазин на карте</h2>
-      <!-- Здесь будет карта -->
-      <img src="img/contacts/map-big.jpg" width="960" height="559" alt="Наш магазин на карте">
-      <p>Здесь будет карта</p>
-      <span class="modal-close">x</span>
+      <img src="img/contacts/map-big.jpg" width="960" height="559" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург">
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
