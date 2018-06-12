@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: 
+        local("Open Sans Regular"), 
+        local("OpenSans-Regular"), 
+        url("css/fonts/opensans.woff2") format("woff2"), 
+        url("css/fonts/opensans.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 200;
+    src: 
+        local("Open Sans Light"), 
+        local("OpenSans-Light"), 
+        url("css/fonts/opensanslight.woff2") format("woff2"), 
+        url("css/fonts/opensanslight.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 900;
+    src: 
+        local("Gilroy Extra Bold"), 
+        local("GillSans-ExtraBold"), 
+        url("css/fonts/gilroyextrabold.woff2") format("woff2"), 
+        url("css/fonts/gilroyextrabold.woff") format("woff");
+  }
+  
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 200;
+    src: 
+        local("Gilroy Light"), 
+        local("GillSans-Light"), 
+        url("css/fonts/gilroylight.woff2") format("woff2"), 
+        url("css/fonts/gilroylight.woff") format("woff");
+  }
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 200;
+    color: rgb(70, 70, 70);
+    
+    background-color: rgb(255, 255, 255);
+  }
+
+a {
+      text-decoration: none;
+  }
+
+.main-header {
+    background-color: rgba(240, 197, 46, 0.5);
+  }
+
+.header-logo {
+    font-family: "Gilroy";
+    font-weight: 900;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.48px;
+    line-height: 48px;
+  }
+.header-logo:hover {
+    opacity: 1;
+  }
+  .header-logo-link {
+    font-family: "Gilroy";
+    font-weight: 900;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.48px;
+    line-height: 48px;
+  }
+.header-logo-link:active {
+    opacity: 0.3;
+  }
+
+.header-search input[type="search"] {
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.15px;
+    line-height: 30px;
+
+    opacity: 0.3;
+    background-color: transparent;
+  }
+
+.header-search input[type="search"]:hover {
+    opacity: 0.6;
+}
+
+.header-search input[type="search"]:focus {
+    opacity: 1;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    opacity: 1;
+}
+
+.main-navigation a, 
+.main-navigation a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    opacity: 1;
+}
+
+.main-navigation a:hover {
+    opacity: 0.6;
+}
+
+.main-navigation a:focus {
+    opacity: 0.3;
+}
+
+a.header-logo:hover {
+    opacity: 1;
+  }
+
+.main-navigation ul,
+.slider-list,
+.feature-list,
+.popular-list,
+.slider-control,
+.services-slider-toggle,
+.services-slider-list,
+.logotypes-list,
+.delivery-partners-list,
+.main-navigation a,
+.main-footer li,
+.breadcrumbs,
+.sort-list,
+.sort-order,
+.filter-option,
+.gadget-item,
+.pagination-item {
+    list-style: none;
+}
+
+.main-menu-item > a {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3.6px;
+    line-height: 24px;
+}
+
+.feature-title {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 47px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.17px;
+    line-height: 56px;
+}
+
+.feature-description {
+    font-family: Gilroy;
+    font-weight: 200;
+    font-size: 15px;
+    color: #464646;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+}
+
+.feature-text-title {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.36px;
+    line-height: 48px;
+}
+
+.feature-text-description {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 13px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.13px;
+    line-height: 20px;
+}
+
+.popular-item a,
+.popular-item a:visited {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.18px;
+    line-height: 24px;
+}
+
+.popular-item a:hover {
+    opacity: 1;
+}
+
+.popular-item a:focus {
+    opacity: 0.3;
+}
+
+.services-slider-item h3 {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 47px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.21px;
+}
+
+.info-title,
+.contact-title {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 47px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.21px;
+    line-height: 48px;
+}
+
+.delivery-item {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.main-footer {
+    background: rgb(70, 70, 70);
+}
+
+.main-footer,
+.main-footer a,
+.main-footer a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.main-footer a:hover,
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.main-footer a:active {
+    opacity: 0.3;
+}
+
+a.footer-logo:hover {
+    opacity: 1;
+  }
+
+.social-item,
+.social-item:visited,
+.breadcrumbs a,
+.breadcrumbs a:visited, {
+    opacity: 0.3;
+}
+
+.social-item active,
+.breadcrumbs a:active {
+    opacity: 0.1;
+}
+
+.main-footer .footer-logo,
+.main-footer .footer-logo-link,
+.main-footer .footer-logo-link:visited {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 48px;
+    color: rgb(255, 198, 0);
+    letter-spacing: 0.48px;
+    line-height: 48px;
+}
+
+.footer-services-item {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    line-height: 24px;
+}
+
+.breadcrumbs-item,
+.breadcrumbs-item a,
+.filter-option {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.catalogue-title {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 47px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.17px;
+    line-height: 48px;
+}
+
+.filter h2,
+.sort h2 {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3.5px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.filter-name {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.18px;
+    line-height: 24px;
+}
+
+.filter input[type="checkbox"]:disabled,
+.filter input[type="radio"]:disabled {
+    opacity: 0.25;
+}
+
+.filter input[type="checkbox"]:hover,
+.filter input[type="radio"]:hover {
+    opacity: 0.6;
+}
+
+.sort-list-item,
+.sort-list-item:visited,
+.sort-order a,
+.sort-order a:visited {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    opacity: 0.3;
+}
+
+.sort-list-item:hover,
+.sort-order a:hover {
+    opacity: 0.6;
+}
+
+.sort-list-item:active,
+.sort-order a:active {
+    opacity: 1;
+}
+
+.gadget-name {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.18px;
+    line-height: 24px;
+}
+
+.gadget-price {
+    font-family: Gilroy;
+    font-weight: 200;
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.16px;
+    line-height: 24px;
+}
+
+.gadget-buy .compare,
+.gadget-buy .compare:visited {
+    opacity: 0.5;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.13px;
+    line-height: 20px;
+}
+
+.gadget-buy .compare:hover {
+    opacity: 1;
+}
+
+.gadget-buy .compare:active {
+    opacity: 0.2;
+}
+
+.pagination-item a,
+.pagination-item a:visited {
+    opacity: 0.3;
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.91px;
+}
+
+.pagination-item a:hover {
+    opacity: 0.6;
+}
+
+.pagination-item a:active {
+    opacity: 1;
+}
+
+.button,
+button[type="submit"],
+.services-toggle-item a {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 3.5px;
+    line-height: 24px;
+}
+
+.button:hover,
+button[type="submit"]:hover,
+.services-toggle-item a:hover {
+    background-color: rgb(255, 198, 0);
+}
+
+.services-toggle-item a:active {
+    color: rgb(247, 225, 130);
+    background-color: rgb(0, 0, 0);
+}
+
+.button:active,
+button[type="submit"]:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.write-us-item label {
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.write-us input[type="text"],
+.write-us input[type="email"],
+.write-us textarea {
+    opacity: 0.5;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 14px;
+    color: rgba(70, 70, 70, 0.4);
+    letter-spacing: 0;
+    line-height: 18px;
+    background-color: rgb(242, 242, 242);
+}
+
+.write-us input[type="text"]:hover,
+.write-us input[type="email"]:hover,
+.write-us textarea:hover {
+    opacity: 0.8;
+}
+
+.write-us input[type="text"]:focus,
+.write-us input[type="email"]:focus,
+.write-us textarea:focus {
+    color: rgba(70, 70, 70, 1);
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(240, 197, 46, 0.5);
+    outline: 0;
+}
+
+.write-us input[type="text"]:invalid,
+.write-us input[type="email"]:invalid,
+.write-us textarea:invalid {
+    background-color: rgba(237, 181, 181, 0.5);
+    outline: 0;
+}
+
+.modal-close {
+    opacity: 0.5;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.3;
+}

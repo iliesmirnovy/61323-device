@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html">DEVICE</a>
+        <a class="header-logo-link" href="index.html">DEVICE</a>
         <div class="user-menu-container">
           <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
             <p class="header-search-item">
               <input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <button class="visually-hidden" type="submit">Искать</button>
+              <button class="visually-hidden" type="submit">Найти</button>
             </p>
           </form>
           <div class="header-menu">
@@ -47,15 +49,15 @@
     </header>
 
     <main class="container">
-      <h1>Моноподы для селфи</h1>
+      <h1 class="catalogue-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-          <li class="breadcrumbs-list"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-list"><a href="catalogue.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-list">Моноподы для селфи</li>
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a href="catalogue.html">Каталог товаров</a></li>
+          <li class="breadcrumbs-item">Моноподы для селфи</li>
       </ul>
       <section class="catalogue-container">
         <section class="filter">
-            <h2>Фильтр</h2>
+            <h2>Фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <p class="filter-item">
                     <span class="filter-name">Стоимость</span>
@@ -103,7 +105,7 @@
             </form>
         </section>
         <section class="sort">
-            <h2>Сортировка</h2>
+            <h2>Сортировка:</h2>
             <ul class="sort-list">
                 <li><a class="sort-list-item active" href="#">По цене</a></li>
                 <li><a class="sort-list-item" href="#">По типу</a></li>
@@ -179,7 +181,7 @@
 
     <footer class="main-footer">
       <div class="footer-menu-container">
-        <a class="footer-logo" href="index.html">DEVICE</a>
+        <a class="footer-logo-link" href="index.html">DEVICE</a>
         <div class="footer-menu">
             <ul class="footer-user-menu">
                 <li class="footer-menu-item"><a class="username" href="#">Валентин Петухов</a></li>

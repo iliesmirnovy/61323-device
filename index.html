@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     
@@ -14,7 +16,7 @@
             <p class="header-search-item">
               <input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
-              <button class="visually-hidden" type="submit">Искать</button>
+              <button class="visually-hidden" type="submit">Найти</button>
             </p>
           </form>
           <div class="header-menu">
@@ -185,7 +187,7 @@
           </li>
         </ul>
       </section>
-      <section class="logotypes">
+      <section class="brands">
         <h2 class="visually-hidden">Список брендов</h2>
         <ul class="logotypes-list">
           <li class="logotype-item"><img src="img/logotypes/logo-1.jpg" width="260" height="100" alt="DJI"></li>
@@ -198,10 +200,10 @@
         <h2 class="info-title">О нас</h2>
         <p class="info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+        <ul class="delivery-partners-list">
+          <li class="delivery-item">Деловые Линии</li>
+          <li class="delivery-item">Автотрейдинг</li>
+          <li class="delivery-item">ЖелДорЭкспедиция</li>
         </ul>
         <a href="#" class="button">Подробнее о нас</a>
       </section>
@@ -262,7 +264,7 @@
         </p>
         <p class="write-us-item">
           <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" type="text" name="e-mail" placeholder="email@example.com">
+          <input id="write-us-email" type="email" name="e-mail" placeholder="email@example.com">
         </p>
         <p class="write-us-item">
           <label for="write-us-message">Текст письма:</label>
