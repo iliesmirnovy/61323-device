@@ -21,7 +21,7 @@
   }
 
 @font-face {
-    font-family: "Gilroy";
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
     src: 
@@ -32,7 +32,7 @@
   }
   
 @font-face {
-    font-family: "Gilroy";
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-style: normal;
     font-weight: 200;
     src: 
@@ -66,7 +66,7 @@ a {
   }
 
 .header-logo {
-    font-family: "Gilroy";
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
@@ -77,7 +77,7 @@ a {
     opacity: 1;
   }
   .header-logo-link {
-    font-family: "Gilroy";
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
