@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     src: 
@@ -10,7 +10,7 @@
   }
 
 @font-face {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-style: normal;
     font-weight: 200;
     src: 
@@ -56,6 +56,30 @@ body {
     
     background-color: rgb(255, 255, 255);
   }
+
+section.services {
+    background-color: rgb(229, 229, 229);
+}
+
+section.filter {
+    background-color: rgb(239, 239, 239);
+}
+
+section.sort {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+ul.pagination-list {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+ul.pagination-list li:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+ul.pagination-list li:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
 
 a {
       text-decoration: none;
@@ -155,7 +179,7 @@ a.header-logo:hover {
 }
 
 .main-menu-item > a {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -164,7 +188,7 @@ a.header-logo:hover {
 }
 
 .feature-title {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
@@ -173,7 +197,7 @@ a.header-logo:hover {
 }
 
 .feature-description {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 15px;
     color: #464646;
@@ -182,7 +206,7 @@ a.header-logo:hover {
 }
 
 .feature-text-title {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 36px;
     color: rgb(0, 0, 0);
@@ -191,7 +215,7 @@ a.header-logo:hover {
 }
 
 .feature-text-description {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 13px;
     color: rgb(70, 70, 70);
@@ -201,7 +225,7 @@ a.header-logo:hover {
 
 .popular-item a,
 .popular-item a:visited {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -218,7 +242,7 @@ a.header-logo:hover {
 }
 
 .services-slider-item h3 {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
@@ -227,7 +251,7 @@ a.header-logo:hover {
 
 .info-title,
 .contact-title {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
@@ -236,7 +260,7 @@ a.header-logo:hover {
 }
 
 .delivery-item {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -282,7 +306,7 @@ a.footer-logo:hover {
 .main-footer .footer-logo,
 .main-footer .footer-logo-link,
 .main-footer .footer-logo-link:visited {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: rgb(255, 198, 0);
@@ -291,7 +315,7 @@ a.footer-logo:hover {
 }
 
 .footer-services-item {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     letter-spacing: 3.6px;
@@ -306,7 +330,7 @@ a.footer-logo:hover {
 }
 
 .catalogue-title {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
@@ -316,7 +340,7 @@ a.footer-logo:hover {
 
 .filter h2,
 .sort h2 {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -326,7 +350,7 @@ a.footer-logo:hover {
 }
 
 .filter-name {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -364,7 +388,7 @@ a.footer-logo:hover {
 }
 
 .gadget-name {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -373,7 +397,7 @@ a.footer-logo:hover {
 }
 
 .gadget-price {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 16px;
     color: rgb(70, 70, 70);
@@ -384,7 +408,7 @@ a.footer-logo:hover {
 .gadget-buy .compare,
 .gadget-buy .compare:visited {
     opacity: 0.5;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 13px;
     color: rgb(0, 0, 0);
@@ -402,12 +426,12 @@ a.footer-logo:hover {
 
 .pagination-item a,
 .pagination-item a:visited {
-    opacity: 0.3;
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
     color: rgb(0, 0, 0);
     letter-spacing: 0.91px;
+    opacity: 0.3;
 }
 
 .pagination-item a:hover {
@@ -418,10 +442,24 @@ a.footer-logo:hover {
     opacity: 1;
 }
 
+.pagination-item-active a:hover {
+    opacity: 0.6;
+}
+
+.pagination-item-active a:active {
+    opacity: 0.3;
+}
+
+.pagination-item-active a,
+.pagination-item-active a:visited {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
 .button,
 button[type="submit"],
 .services-toggle-item a {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -446,7 +484,7 @@ button[type="submit"]:active {
 }
 
 .write-us-item label {
-    font-family: Gilroy;
+    font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -458,7 +496,7 @@ button[type="submit"]:active {
 .write-us input[type="email"],
 .write-us textarea {
     opacity: 0.5;
-    font-family: "Open Sans";
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 14px;
     color: rgba(70, 70, 70, 0.4);
