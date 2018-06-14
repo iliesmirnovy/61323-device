@@ -1,48 +1,50 @@
 @font-face {
-    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     src: 
-        local("Open Sans Regular"), 
-        local("OpenSans-Regular"), 
-        url("css/fonts/opensans.woff2") format("woff2"), 
-        url("css/fonts/opensans.woff") format("woff");
+    local("Open Sans Regular"), 
+    local("OpenSans-Regular"), 
+    url("fonts/opensans.woff2") format("woff2"), 
+    url("fonts/opensans.woff") format("woff");
   }
 
 @font-face {
-    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 200;
     src: 
         local("Open Sans Light"), 
         local("OpenSans-Light"), 
-        url("css/fonts/opensanslight.woff2") format("woff2"), 
-        url("css/fonts/opensanslight.woff") format("woff");
+        url("fonts/opensanslight.woff2") format("woff2"), 
+        url("fonts/opensanslight.woff") format("woff");
   }
 
 @font-face {
-    font-family: Gilroy, Verdana, Arial, sans-serif;
+    font-family: Gilroy;
     font-style: normal;
     font-weight: 900;
     src: 
         local("Gilroy Extra Bold"), 
         local("GillSans-ExtraBold"), 
-        url("css/fonts/gilroyextrabold.woff2") format("woff2"), 
-        url("css/fonts/gilroyextrabold.woff") format("woff");
+        url("fonts/gilroyextrabold.woff2") format("woff2"), 
+        url("fonts/gilroyextrabold.woff") format("woff");
   }
   
 @font-face {
-    font-family: Gilroy, Verdana, Arial, sans-serif;
+    font-family: Gilroy;
     font-style: normal;
     font-weight: 200;
-    src: 
+    src:
         local("Gilroy Light"), 
         local("GillSans-Light"), 
-        url("css/fonts/gilroylight.woff2") format("woff2"), 
-        url("css/fonts/gilroylight.woff") format("woff");
+        url("fonts/gilroylight.woff2") format("woff2"), 
+        url("fonts/gilroylight.woff") format("woff");
   }
 
-
+.visually-hidden {
+    display: none;
+}
 
 body {
     margin: 0;
@@ -57,7 +59,7 @@ body {
     background-color: rgb(255, 255, 255);
   }
 
-section.services {
+.services {
     background-color: rgb(229, 229, 229);
 }
 
@@ -65,19 +67,19 @@ section.filter {
     background-color: rgb(239, 239, 239);
 }
 
-section.sort {
+.sort {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-ul.pagination-list {
+.pagination-list {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-ul.pagination-list li:first-child:hover {
+.pagination-list li:first-child:hover {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-ul.pagination-list li:last-child:hover {
+.pagination-list li:last-child:hover {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
@@ -89,6 +91,11 @@ a {
     background-color: rgba(240, 197, 46, 0.5);
   }
 
+.header-menu {
+    letter-spacing: 0.15px;
+    line-height: 30px;
+}
+
 .header-logo {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -97,10 +104,12 @@ a {
     letter-spacing: 0.48px;
     line-height: 48px;
   }
+
 .header-logo:hover {
     opacity: 1;
   }
-  .header-logo-link {
+
+.header-logo-link {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
@@ -108,14 +117,13 @@ a {
     letter-spacing: 0.48px;
     line-height: 48px;
   }
+  
 .header-logo-link:active {
     opacity: 0.3;
   }
 
 .header-search input[type="search"] {
-    font-family: inherit;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
+    font-weight: 200;
     letter-spacing: 0.15px;
     line-height: 30px;
 
@@ -129,18 +137,36 @@ a {
 
 .header-search input[type="search"]:focus {
     opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+.header-search-item button.search-button {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.15px;
+    line-height: 30px;
+
+    border: 2px solid black;
+    background-color: transparent;
+
+}
+
+.header-search-item button.search-button:hover {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    
+}
+
+.header-search-item button.search-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    
 }
 
 .main-navigation a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-
-    opacity: 1;
-}
-
-.main-navigation a, 
-.main-navigation a:visited {
-    text-decoration: none;
     color: rgb(0, 0, 0);
 
     opacity: 1;
@@ -153,10 +179,6 @@ a {
 .main-navigation a:focus {
     opacity: 0.3;
 }
-
-a.header-logo:hover {
-    opacity: 1;
-  }
 
 .main-navigation ul,
 .slider-list,
@@ -187,6 +209,26 @@ a.header-logo:hover {
     line-height: 24px;
 }
 
+.catalogue-more {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    font-size: 0px;
+
+    opacity: 0.3;
+    background-image: url(../img/svg/plus.svg);
+}
+
+.catalogue-item {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.15px;
+    line-height: 36px;
+}
+
 .feature-title {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -199,8 +241,6 @@ a.header-logo:hover {
 .feature-description {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 200;
-    font-size: 15px;
-    color: #464646;
     letter-spacing: 0.15px;
     line-height: 30px;
 }
@@ -223,8 +263,7 @@ a.header-logo:hover {
     line-height: 20px;
 }
 
-.popular-item a,
-.popular-item a:visited {
+.popular-item a {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -247,6 +286,22 @@ a.header-logo:hover {
     font-size: 47px;
     color: rgb(0, 0, 0);
     letter-spacing: 0.21px;
+    line-height: 48px;
+}
+
+.services-slider-item p {
+    letter-spacing: 0.15px;
+    line-height: 30px;
+}
+
+.logotype-item {
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+.logotype-item:hover {
+    filter: none;
+    opacity: 1;
 }
 
 .info-title,
@@ -257,6 +312,12 @@ a.header-logo:hover {
     color: rgb(0, 0, 0);
     letter-spacing: 0.21px;
     line-height: 48px;
+}
+
+.info-text,
+.contact-text {
+    letter-spacing: 0;
+    line-height: 30px;
 }
 
 .delivery-item {
@@ -273,8 +334,7 @@ a.header-logo:hover {
 }
 
 .main-footer,
-.main-footer a,
-.main-footer a:visited {
+.main-footer a {
     color: rgb(255, 255, 255);
 }
 
@@ -292,26 +352,40 @@ a.footer-logo:hover {
   }
 
 .social-item,
-.social-item:visited,
-.breadcrumbs a,
-.breadcrumbs a:visited, {
+.breadcrumbs a {
     opacity: 0.3;
 }
 
-.social-item active,
+.social-item:active,
 .breadcrumbs a:active {
     opacity: 0.1;
 }
 
 .main-footer .footer-logo,
-.main-footer .footer-logo-link,
-.main-footer .footer-logo-link:visited {
+.main-footer .footer-logo-link {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: rgb(255, 198, 0);
     letter-spacing: 0.48px;
     line-height: 48px;
+}
+
+.footer-menu {
+    color: #FFFFFF;
+    letter-spacing: 0.15px;
+    line-height: 36px;
+}
+
+.footer-address,
+.footer-tel {
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.footer-tel {
+    text-align: right;
 }
 
 .footer-services-item {
@@ -325,8 +399,23 @@ a.footer-logo:hover {
 .breadcrumbs-item,
 .breadcrumbs-item a,
 .filter-option {
+    opacity: 0.3;
+    font-family: "Open Sans";
+    font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
+    letter-spacing: 0.14px;
+    line-height: 24px;
+
+}
+
+.filter-option {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.14px;
+    line-height: 40px;
 }
 
 .catalogue-title {
@@ -369,9 +458,7 @@ a.footer-logo:hover {
 }
 
 .sort-list-item,
-.sort-list-item:visited,
-.sort-order a,
-.sort-order a:visited {
+.sort-order a {
     font-size: 14px;
     color: rgb(0, 0, 0);
     opacity: 0.3;
@@ -405,8 +492,7 @@ a.footer-logo:hover {
     line-height: 24px;
 }
 
-.gadget-buy .compare,
-.gadget-buy .compare:visited {
+.gadget-buy .compare {
     opacity: 0.5;
     font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
@@ -424,8 +510,7 @@ a.footer-logo:hover {
     opacity: 0.2;
 }
 
-.pagination-item a,
-.pagination-item a:visited {
+.pagination-item a {
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 16px;
@@ -450,8 +535,7 @@ a.footer-logo:hover {
     opacity: 0.3;
 }
 
-.pagination-item-active a,
-.pagination-item-active a:visited {
+.pagination-item-active a {
     color: rgb(0, 0, 0);
     opacity: 1;
 }
