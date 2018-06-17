@@ -43,7 +43,11 @@
   }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 body {
@@ -384,9 +388,7 @@ a.footer-logo:hover {
     line-height: 30px;
 }
 
-.footer-tel {
-    text-align: right;
-}
+
 
 .footer-services-item {
     font-family: Gilroy, Verdana, Arial, sans-serif;
@@ -397,8 +399,7 @@ a.footer-logo:hover {
 }
 
 .breadcrumbs-item,
-.breadcrumbs-item a,
-.filter-option {
+.breadcrumbs-item a {
     opacity: 0.3;
     font-family: "Open Sans";
     font-weight: 200;
@@ -409,13 +410,22 @@ a.footer-logo:hover {
 
 }
 
-.filter-option {
+.filter-input {
+    opacity: 1;
     font-family: "Open Sans";
     font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
     letter-spacing: 0.14px;
     line-height: 40px;
+}
+
+.filter-input:hover {
+    opacity: 0.6;
+}
+
+.filter-option.disabled {
+    opacity: 0.25;
 }
 
 .catalogue-title {
@@ -460,8 +470,11 @@ a.footer-logo:hover {
 .sort-list-item,
 .sort-order a {
     font-size: 14px;
+    font-weight: 200;
     color: rgb(0, 0, 0);
     opacity: 0.3;
+    letter-spacing: 0;
+    line-height: 18px;
 }
 
 .sort-list-item:hover,
@@ -499,7 +512,7 @@ a.footer-logo:hover {
     font-size: 13px;
     color: rgb(0, 0, 0);
     letter-spacing: 0.13px;
-    line-height: 20px;
+    line-height: 36px;
 }
 
 .gadget-buy .compare:hover {
@@ -515,8 +528,9 @@ a.footer-logo:hover {
     font-weight: 900;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.91px;
     opacity: 0.3;
+    letter-spacing: 3.5px;
+    line-height: 24px;
 }
 
 .pagination-item a:hover {
