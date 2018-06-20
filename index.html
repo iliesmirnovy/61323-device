@@ -15,7 +15,7 @@
           <div class="user-menu-container">
             <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
               <p class="header-search-item">
-                <input type="search" name="search" id="header-search" placeholder="Поиск по сайту">
+                <input type="search" class="search-input" name="search" id="header-search" placeholder="Поиск по сайту">
                 <label class="visually-hidden" for="header-search">Поиск по сайту</label>
                 <button class="search-button" type="submit">Найти</button>
               </p>
@@ -25,8 +25,8 @@
                 <li class="user-menu-item"><a class="login-link" href="#">Войти</a></li>
               </ul>
               <ul class="secondary-menu">
-                <li class="secondary-menu-item secondary-menu-compare"><a href="#">Сравнить</a></li>
-                <li class="secondary-menu-item secondary-menu-cart"><a href="#">Корзина</a></li>
+                <li class="secondary-menu-item"><a class="secondary-menu-compare" href="#">Сравнить</a></li>
+                <li class="secondary-menu-item"><a class="secondary-menu-cart" href="#">Корзина</a></li>
               </ul>
             </div>
           </div>
@@ -34,7 +34,7 @@
             <li class="main-menu-item main-menu-catalogue"><a href="catalogue.html">Каталог товаров</a><span class="catalogue-more">+</span>
               <ul class="catalogue">
                 <li class="catalogue-item vr"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalogue-item selfie"><a href="#">Моноподы для селфи</a></li>
+                <li class="catalogue-item selfie"><a href="catalogue.html">Моноподы для селфи</a></li>
                 <li class="catalogue-item camera"><a href="#">Экшн-камеры</a></li>
                 <li class="catalogue-item bracelet"><a href="#">Фитнес-браслеты</a></li>
                 <li class="catalogue-item watch"><a href="#">Умные часы</a></li>
@@ -120,7 +120,7 @@
                     <img src="img/slider/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
                   </div> 
                 </div>
-                <div class="slide-description-wrapper">
+                <div class="slider-description-wrapper">
                   <h3 class="feature-title">Порхает как бабочка, жалит как пчела!</h3>
                   <p class="feature-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <a class="button" href="#">Подробнее</a>
@@ -188,7 +188,7 @@
           <h2 class="visually-hidden">Сервисы</h2>
           <div class="services-wrapper">
             <ul class="services-slider-toggle">
-              <li class="services-toggle-item"><a href="#">Доставка</a></li>
+              <li class="services-toggle-item"><a class="button" href="#">Доставка</a></li>
               <li class="services-toggle-item"><a href="#">Гарантия</a></li>
               <li class="services-toggle-item"><a href="#">Кредит</a></li>
             </ul>
@@ -303,7 +303,8 @@
           <label for="write-us-message">Текст письма:</label>
           <textarea id="write-us-message" rows="5" name="message" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
+        <input type="submit" class="button" value="Отправить">
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
