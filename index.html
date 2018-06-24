@@ -9,7 +9,7 @@
   <body>
     
     <header class="main-header">
-      <div class="center-container-1160 header-container">
+      <div class="center-container-1160 header-container-main">
         <nav class="main-navigation">
           <a class="header-logo non-link">DEVICE</a>
           <div class="user-menu-container">
@@ -33,12 +33,18 @@
           <ul class="main-menu">
             <li class="main-menu-item main-menu-catalogue"><a href="catalogue.html">Каталог товаров</a><span class="catalogue-more">+</span>
               <ul class="catalogue">
-                <li class="catalogue-item vr"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalogue-item selfie"><a href="catalogue.html">Моноподы для селфи</a></li>
-                <li class="catalogue-item camera"><a href="#">Экшн-камеры</a></li>
-                <li class="catalogue-item bracelet"><a href="#">Фитнес-браслеты</a></li>
-                <li class="catalogue-item watch"><a href="#">Умные часы</a></li>
-                <li class="catalogue-item quadrocopter"><a href="#">Квадрокоптеры</a></li>
+                <li class="catalogue-column">
+                  <a class="catalogue-item" href="#">Виртуальная реальность</a>
+                  <a class="catalogue-item" href="catalogue.html">Моноподы для селфи</a>
+                  <a class="catalogue-item" href="#">Экшн-камеры</a>
+                </li>
+                <li class="catalogue-column">
+                  <a class="catalogue-item" href="#">Фитнес-браслеты</a>
+                  <a class="catalogue-item" href="#">Умные часы</a>
+                </li>
+                <li class="catalogue-column">
+                  <a class="catalogue-item" href="#">Квадрокоптеры</a>
+                </li>
                 <li class="catalogue-background"></li>
               </ul>
             </li>
@@ -247,7 +253,7 @@
                 <div class="contact-map">
                   <a class="contact-map-link" href="#"><img src="img/contacts/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург"></a>
                 </div>
-                <a class="button" href="#" >Напишите нам</a>
+                <a class="write-us-button button" href="#" >Напишите нам</a>
               </section>
         </div>
         
@@ -296,7 +302,7 @@
       
     </footer>
     
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback hidden">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us-item">
@@ -313,12 +319,13 @@
         </p>
         <button type="submit" class="input-button"><span class="button-text">Отправить</span></button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="write-us-close" type="button">Закрыть</button>
     </section>
-    <section class="modal modal-map">
+
+    <section class="modal modal-map hidden">
       <h2 class="visually-hidden">Наш магазин на карте</h2>
       <img src="img/contacts/map-big.jpg" width="960" height="559" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург">
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="map-close" type="button">Закрыть</button>
     </section>
   <script src="js/script.js" type="text/javascript"></script>
   </body>

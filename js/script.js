@@ -37,11 +37,11 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 	switchSlide(0, sliderControls, slides);
 	switchSlide(1, sliderControls, slides);
 	switchSlide(2, sliderControls, slides);
-})();
+})(); */
 
 (function manageModalFeedback() {
-	var button = document.querySelector(".button.write-us");
-	var modalFeedback = document.querySelector(".modal.write-us");
+	var button = document.querySelector(".write-us-button");
+	var modalFeedback = document.querySelector(".modal-feedback");
 	var closeModal = document.querySelector(".write-us-close");
 
 	button.addEventListener("click", function(evt) {
@@ -62,7 +62,7 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 })();
 
 (function manageModalMap() {
-	var miniMap = document.querySelector(".static-map");
+	var miniMap = document.querySelector(".contact-map");
 	var modalMap = document.querySelector(".modal-map");
 	var closeModal = document.querySelector(".map-close");
 
@@ -70,17 +70,15 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 		evt.preventDefault();
 		modalMap.classList.remove("hidden");
 
-		closeModal.addEventListener("click", function closeClickHandler () {
+	closeModal.addEventListener("click", function closeClickHandler () {
+		modalMap.classList.add("hidden");
+		closeModal.removeEventListener("click", closeClickHandler);
+	})
+	document.addEventListener("keydown", function pressEscHandler(evt) {
+		if (evt.keyCode === 27) {
 			modalMap.classList.add("hidden");
-			closeModal.removeEventListener("click", closeClickHandler);
-		})
-		document.addEventListener("keydown", function pressEscHandler(evt) {
-			if (evt.keyCode === 27) {
-				modalMap.classList.add("hidden");
-			}
-			document.removeEventListener("keydown", pressEscHandler);
-		})
+		}
+		document.removeEventListener("keydown", pressEscHandler);
+	})
 	})
 })();
-
- */
