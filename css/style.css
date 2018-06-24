@@ -74,7 +74,8 @@ body {
 }
 
 section.filter {
-    margin-top: -51px;
+    position: relative;
+    margin-top: -70px;
     width: 32.5%;
 
     background-color: rgba(0, 0, 0, 0.08);
@@ -122,7 +123,9 @@ a {
 }
 
 .catalogue-header-container {
+    display: flex;
     width: 100%;
+    min-height: 70px;
 
     background-color: rgba(0, 0, 0, 0.08);
 }
@@ -1128,7 +1131,6 @@ li.footer-secondary-menu-item:last-child {
     font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.14px;
     line-height: 24px;
 
 }
@@ -1136,7 +1138,7 @@ li.footer-secondary-menu-item:last-child {
 .breadcrumbs {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
 }
 
 .breadcrumbs-item:after {
@@ -1144,7 +1146,7 @@ li.footer-secondary-menu-item:last-child {
     content: "";
     width: 5px;
     height: 8px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 20px;
 
     background-image: url(../img/svg/nav-arrow.svg);
@@ -1166,6 +1168,24 @@ a.breadcrumbs-current:hover {
     opacity: 1;
 }
 
+.filter-item {
+    position: relative;
+}
+
+.filter-item::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 200px;
+    height: 2px;
+    background-color: #000000;
+
+}
+
+.filter-item.cost {
+    margin-top: 85px;
+}
+
 .filter-input {
     opacity: 1;
     font-family: "Open Sans";
@@ -1180,6 +1200,42 @@ a.breadcrumbs-current:hover {
     opacity: 0.6;
 }
 
+.filter-input-checkbox {
+    position: relative;
+    padding-left: 40px;
+}
+
+.filter-input-checkbox:before {
+    position: absolute;
+    left: 0;
+    top: -3px;
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+
+    background-image: url("../img/svg/checkbox-off.svg")
+}
+
+.filter-input-radio {
+    position: relative;
+    padding-left: 40px;
+}
+
+.filter-input-radio:before {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+    background-image: url("../img/svg/radio-off.svg")
+}
+
 .filter-option.disabled {
     opacity: 0.25;
 }
@@ -1192,12 +1248,14 @@ a.breadcrumbs-current:hover {
 }
 
 .catalogue-title {
+    margin-bottom: 18px;
+
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.17px;
-    line-height: 48px;
+    letter-spacing: 1px;
+    line-height: 60px;
 }
 
 .filter-wrapper {
@@ -1227,7 +1285,7 @@ main h2 {
 }
 
 .sort-title {
-    margin-left: 210px;
+    margin-left: 236px;
 }
 
 .filter-name {
@@ -1257,6 +1315,7 @@ main h2 {
 .sort-list {
     display: flex;
     margin-right: 200px;
+    margin-left: 40px;
 }
 
 .sort-order {
