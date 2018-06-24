@@ -611,11 +611,11 @@ ul.catalogue:hover {
 
 .slider-second .slider-image-wrapper {
     position: relative;
-    left: 56px;
     top: -20px;
+    left: 56px;
 }
 
-.slider-second .slider-image-wrapper {
+.slider-third .slider-image-wrapper {
     position: relative;
     top: 33px;
     left: -28px;
@@ -629,7 +629,7 @@ ul.catalogue:hover {
 }
 
 .feature-item {
-    margin-right: 80px;
+    margin-right: 75px;
 }
 
 .feature-title {
@@ -1451,7 +1451,7 @@ a.sort-order-desc{
     padding-right: 20px;
     margin-bottom: 25px;
     height: 40px;
-    width: 160px;
+    width: 123px;
 
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
