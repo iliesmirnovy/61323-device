@@ -29,15 +29,15 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 	switchSlide(2, sliderControls, slides);	
 })();
 
-/* (function manageServicesSlider() {
-	var sliderWrap = document.querySelector(".services-slider-wrap");
-	var sliderControls = sliderWrap.querySelectorAll(".services-controls-item");
-	var slides = sliderWrap.querySelectorAll(".services-item");
+(function manageServicesSlider() {
+	var sliderWrap = document.querySelector(".services-wrapper");
+	var sliderControls = sliderWrap.querySelectorAll(".services-toggle-item a");
+	var slides = sliderWrap.querySelectorAll(".services-slider-item");
 
 	switchSlide(0, sliderControls, slides);
 	switchSlide(1, sliderControls, slides);
 	switchSlide(2, sliderControls, slides);
-})(); */
+})(); 
 
 (function manageModalFeedback() {
 	var button = document.querySelector(".write-us-button");
