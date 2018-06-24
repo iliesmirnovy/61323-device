@@ -8,8 +8,8 @@
   </head>
   <body>
 
-    <header class="main-header">
-      <div class="center-container header-container">
+<header class="main-header">
+      <div class="center-container-1160 header-container">
         <nav class="main-navigation">
           <a class="header-logo-link" href="index.html">DEVICE</a>
           <div class="user-menu-container">
@@ -48,19 +48,44 @@
           </ul>
         </nav>
       </div>
-    </header> 
+</header> 
 
-    <main class="container">
-      <h1 class="catalogue-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs-item"><a href="catalogue.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-item">Моноподы для селфи</li>
-      </ul>
-      <section class="catalogue-container">
-          <div class="filter-wrapper">
+<main class="catalogue-content">
+        <div class="center-container-1040">
+            <h1 class="catalogue-title">Моноподы для селфи</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs-item"><a href="catalogue.html">Каталог товаров</a></li>
+                <li class="breadcrumbs-item"><a class="breadcrumbs-current">Моноподы для селфи</a></li>
+            </ul>
+        </div>
+
+    <div class="catalogue-content-container"> 
+      <section class="catalogue-header-container">
+            <div class="center-container-1160 catalogue-container">
+                <h2 class="filter-title">Фильтр:</h2>
+                <h2 class="sort-title">Сортировка:</h2>
+                <ul class="sort-list">
+                    <li><a class="sort-list-item active" href="#">По цене</a></li>
+                    <li><a class="sort-list-item" href="#">По типу</a></li>
+                    <li><a class="sort-list-item" href="#">По популярности</a></li>
+                </ul>
+                <ul class="sort-order">
+                    <li>
+                        <a class="sort-order-asc" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                        <span class="visually-hidden">По возрастанию</span></a>
+                    </li>
+                    <li>
+                        <a class="sort-order-desc active" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                        <span class="visually-hidden">По убыванию</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
             <section class="filter">
-                <h2>Фильтр:</h2>
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                     <p class="filter-item">
                         <label class="filter-name" for="cost-range">Стоимость</label>
@@ -107,20 +132,7 @@
                     <button class="input-button" type="submit"><span class="button-text">Показать</span></button>
                 </form>
             </section>
-          </div>
-        <div class="catalogue-wrapper">
-            <section class="sort">
-                <h2>Сортировка:</h2>
-                <ul class="sort-list">
-                    <li><a class="sort-list-item active" href="#">По цене</a></li>
-                    <li><a class="sort-list-item" href="#">По типу</a></li>
-                    <li><a class="sort-list-item" href="#">По популярности</a></li>
-                </ul>
-                <ul class="sort-order">
-                    <li><a class="sort-order-asc active" href="#">По возрастанию</a></li>
-                    <li><a class="sort-order-desc" href="#">По убыванию</a></li>
-                </ul>
-            </section>
+        <div class="custom-container-1">
             <section class="gadgets">
                 <h2 class="visually-hidden">Список гаджетов</h2>
                 <ul class="gadgets-list">
@@ -193,15 +205,15 @@
                 </li>
                 <li class="pagination-item pagination-item-active"><a href="#">Вперед</a></li>
             </ul>
+         </div>
         </section>
-        </div>
-        
-    </main>
+    </div>    
+</main>
 
-    <footer class="main-footer">
-      <div class="center-container">
+<footer class="main-footer">
+      <div class="center-container-1160">
         <div class="footer-menu-container">
-          <a class="footer-logo">DEVICE</a>
+          <a class="footer-logo" href="index.html">DEVICE</a>
           <div class="footer-menu">
              <ul class="user-menu">
                 <li class="user-menu-item"><a class="username" href="#">Валентин Петухов</a></li>
