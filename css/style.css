@@ -120,6 +120,7 @@ a {
     width: 760px;
     margin-left: 70px;
     margin-right: auto;
+    padding-top: 70px;
 }
 
 .catalogue-header-container {
@@ -1017,7 +1018,7 @@ li.popular-item {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: -3px;
+    margin-top: -6px;
 }
 
 .footer-menu .user-menu,
@@ -1186,6 +1187,29 @@ a.breadcrumbs-current:hover {
     margin-top: 85px;
 }
 
+.filter-cost {
+    margin-bottom: 27px;
+    display: block;
+}
+
+.filter-item.color {
+    margin-top: 60px;
+}
+
+.filter-color {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.filter-item.bluetooth {
+    margin-top: 41px;
+    margin-bottom: 18px;
+}
+
+form.filter .input-button {
+    margin-top: 17px;
+}
+
 .filter-input {
     opacity: 1;
     font-family: "Open Sans";
@@ -1202,7 +1226,7 @@ a.breadcrumbs-current:hover {
 
 .filter-input-checkbox {
     position: relative;
-    padding-left: 40px;
+    padding-left: 38px;
 }
 
 .filter-input-checkbox:before {
@@ -1218,9 +1242,13 @@ a.breadcrumbs-current:hover {
     background-image: url("../img/svg/checkbox-off.svg")
 }
 
+.filter-option input[type="checkbox"]:checked ~ .filter-input-checkbox:before {
+    background-image: url("../img/svg/checkbox-on.svg")
+}
+
 .filter-input-radio {
     position: relative;
-    padding-left: 40px;
+    padding-left: 38px;
 }
 
 .filter-input-radio:before {
@@ -1234,6 +1262,10 @@ a.breadcrumbs-current:hover {
     margin-right: 10px;
 
     background-image: url("../img/svg/radio-off.svg")
+}
+
+.filter-option input[type="radio"]:checked ~ .filter-input-radio:before {
+    background-image: url("../img/svg/radio-on.svg")
 }
 
 .filter-option.disabled {
@@ -1362,11 +1394,12 @@ a.sort-order-desc{
 }
 
 .gadget-item {
-    margin-top: 60px;
+    margin-bottom: 47px;
 }
 
 .gadget-item-picture {
     position: relative;
+    margin-bottom: 24px;
 }
 
 .gadget-image {
@@ -1401,7 +1434,7 @@ a.sort-order-desc{
 }
 
 .gadget-name {
-    width: 250px;
+    width: 260px;
 
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -1412,6 +1445,8 @@ a.sort-order-desc{
 }
 
 .gadget-price {
+    max-width: 80px;
+
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 16px;
@@ -1444,18 +1479,25 @@ a.sort-order-desc{
     height: 70px;
     width: 760px;
     align-items: center;
-    margin-bottom: 75px;
-    margin-top: 30px;
+    margin-bottom: 77px;
+    margin-top: -10px;
+}
+
+.pagination-item:first-child {
+    padding-left: 15px;
+}
+
+.pagination-item:last-child {
+    padding-right: 15px;
 }
 
 .pagination-numbers {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 .pagination-item a {
-    padding: 30px;
+    padding: 30px 15px;
 
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -1607,6 +1649,7 @@ a.sort-order-desc{
     padding-left: 20px;
     padding-right: 20px;
     height: 40px;
+    width: 200px;
 
     font-family: Gilroy, Verdana, Arial, sans-serif;
     font-weight: 900;

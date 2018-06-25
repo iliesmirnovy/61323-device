@@ -1,5 +1,3 @@
-"use strict";
-
 function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 	sliderControls[slideAndButtonNumber].addEventListener("click", function() {
 		if (!sliderControls[slideAndButtonNumber].classList.contains("active")) {
