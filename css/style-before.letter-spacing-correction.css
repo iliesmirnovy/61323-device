@@ -164,7 +164,7 @@ a {
 .header-menu {
     display: flex;
     justify-content: space-between;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
     width: 500px;
 }
@@ -305,7 +305,7 @@ footer .cart:before {
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
 
     cursor: default;
@@ -325,7 +325,7 @@ footer .cart:before {
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
   }
   
@@ -347,7 +347,7 @@ footer .cart:before {
 
 .header-search input[type="search"] {
     font-weight: 200;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
     height: 43px;
     margin-top: -4px;
@@ -389,7 +389,7 @@ footer .cart:before {
     font-weight: 200;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
 
     border: 2px solid black;
@@ -484,7 +484,7 @@ li {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 3.5px;
+    letter-spacing: 3.6px;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -545,7 +545,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 36px;
 }
 
@@ -575,7 +575,7 @@ ul.catalogue:hover {
     font-weight: 900;
     font-size: 179.2px;
     color: rgb(255, 255, 255);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     line-height: 179px;
 
     z-index: 0;
@@ -654,7 +654,7 @@ ul.catalogue:hover {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.17px;
     line-height: 56px;
 }
 
@@ -663,7 +663,7 @@ ul.catalogue:hover {
 
     font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 2;
 }
 
@@ -686,7 +686,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 36px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     line-height: 48px;
 }
 
@@ -695,7 +695,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 13px;
     color: rgb(70, 70, 70);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.13px;
     line-height: 20px;
 }
 
@@ -721,7 +721,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 
     opacity: 1;
@@ -817,7 +817,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.21px;
     line-height: 48px;
 }
 
@@ -832,7 +832,7 @@ li.popular-item {
     margin-top: 30px;
     width: 460px;
 
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
 }
 
@@ -917,7 +917,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.21px;
     line-height: 48px;
     text-transform: none;
 }
@@ -1008,7 +1008,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 48px;
     color: rgb(255, 198, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
 }
 
@@ -1022,7 +1022,7 @@ li.popular-item {
     display: flex;
 
     color: rgb(255, 255, 255);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 36px;
 }
 
@@ -1133,7 +1133,7 @@ li.footer-secondary-menu-item:last-child {
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
-    letter-spacing: 4px;
+    letter-spacing: 3.6px;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -1311,12 +1311,7 @@ a.breadcrumbs-current:hover {
 
 .filter-item.bluetooth {
     margin-top: 41px;
-    margin-bottom: 14px;
-}
-
-.filter-bluetooth {
-    margin-bottom: 20px;
-    display: block;
+    margin-bottom: 33px;
 }
 
 form.filter .input-button {
@@ -1329,7 +1324,7 @@ form.filter .input-button {
     font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.14px;
     line-height: 40px;
 }
 
@@ -1439,7 +1434,7 @@ main h2 {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 }
 
@@ -1554,7 +1549,7 @@ a.sort-order-desc{
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 }
 
@@ -1565,7 +1560,7 @@ a.sort-order-desc{
     font-weight: 200;
     font-size: 16px;
     color: rgb(70, 70, 70);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.16px;
     line-height: 24px;
 }
 
@@ -1575,7 +1570,7 @@ a.sort-order-desc{
     font-weight: 200;
     font-size: 13px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.13px;
     line-height: 36px;
 }
 

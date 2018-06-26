@@ -92,13 +92,26 @@
             </div>
         </section>
         
-            <section class="filter">
+        <section class="filter">
+            <h2 class="visually-hidden">Фильтр по категории «Моноподы для селфи»</h2>
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                    <p class="filter-item cost">
-                        <label class="filter-name filter-cost" for="cost-range">Стоимость</label>
-                        <input type="range" name="cost-range" id="cost-range" min="0" max="10000" step="100">
-                    </p>
-                    <p class="filter-item color">
+                    <div class="filter-item cost">
+                        <label class="filter-name filter-cost">Стоимость</label>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-item color">
                         <span class="filter-name filter-color">Цвет</span>
                         <ul>
                             <li class="filter-option">
@@ -122,9 +135,9 @@
                                 <label for="filter-pink" class="filter-input filter-input-checkbox">Розовый</label>
                             </li>
                         </ul>
-                    </p>
-                    <p class="filter-item bluetooth">
-                        <span class="filter-name">Bluetooth</span>
+                    </div>
+                    <div class="filter-item bluetooth">
+                        <span class="filter-name filter-bluetooth">Bluetooth</span>
                         <ul>
                             <li class="filter-option">
                                 <input class="visually-hidden" type="radio" name="bluetooth" value="yes" id="bluetooth-yes" checked>
@@ -135,10 +148,10 @@
                                 <label for="bluetooth-no" class="filter-input filter-input-radio ">Нет</label>
                             </li>
                         </ul>
-                    </p>
+                    </div>
                     <button class="input-button" type="submit"><span class="button-text">Показать</span></button>
                 </form>
-            </section>
+        </section>
         <div class="custom-container-1">
             <section class="gadgets">
                 <h2 class="visually-hidden">Список гаджетов</h2>
@@ -213,8 +226,8 @@
                 <li class="pagination-item pagination-item-active"><a href="#">Вперед</a></li>
             </ul>
         </div>
-    </section>
-    </div>    
+  </div>
+
 </main>
 
 <footer class="main-footer">
