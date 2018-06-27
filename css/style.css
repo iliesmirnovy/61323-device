@@ -25,10 +25,10 @@
     font-style: normal;
     font-weight: 900;
     src: 
-        local(""Gilroy" Extra Bold"), 
+        local("Gilroy Extra Bold"), 
         local("GillSans-ExtraBold"), 
-        url("fonts/"Gilroy"extrabold.woff2") format("woff2"), 
-        url("fonts/"Gilroy"extrabold.woff") format("woff");
+        url("fonts/gilroyextrabold.woff2") format("woff2"), 
+        url("fonts/gilroyextrabold.woff") format("woff");
   }
   
 @font-face {
@@ -36,10 +36,10 @@
     font-style: normal;
     font-weight: 200;
     src:
-        local(""Gilroy" Light"), 
+        local("Gilroy Light"), 
         local("GillSans-Light"), 
-        url("fonts/"Gilroy"light.woff2") format("woff2"), 
-        url("fonts/"Gilroy"light.woff") format("woff");
+        url("fonts/gilroylight.woff2") format("woff2"), 
+        url("fonts/gilroylight.woff") format("woff");
   }
 
 * {
@@ -70,6 +70,7 @@ body {
 
 .services {
     max-height: 288px;
+    min-width: 1240px;
 
     background-color: rgb(229, 229, 229);
 }
@@ -136,20 +137,34 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-width: 1240px;
 }
 
+.main-header {
+    min-width: 1240px;;
+}
 .header-container-main {
+    min-width: 1160px;
     margin-top: 40px;
     height: 300px;
 
-    background-color: rgba(240, 197, 46, 0.5);
+    background-color: rgb(247, 226, 150);
 }
 
 .header-container {
     margin-top: 40px;
     height: 186px;
+    min-width: 1160px;
 
-    background-color: rgba(240, 197, 46, 0.5);
+    background-color: rgb(247, 226, 150);
+}
+
+.main-content {
+    min-width: 1240px;
+}
+
+.catalogue-content {
+    min-width: 1240px;
 }
 
 .main-navigation {
@@ -164,7 +179,7 @@ a {
 .header-menu {
     display: flex;
     justify-content: space-between;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
     width: 500px;
 }
@@ -178,7 +193,7 @@ a {
 }
 
 .login-link:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
@@ -189,7 +204,7 @@ a {
 }
 
 .username:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
@@ -204,7 +219,7 @@ a {
 }
 
 .secondary-menu-compare:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 10px;
@@ -215,7 +230,7 @@ a {
 }
 
 .secondary-menu-cart:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 12px;
@@ -226,7 +241,7 @@ a {
 }
 
 footer .login-link:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
@@ -237,7 +252,7 @@ footer .login-link:before {
 }
 
 footer .username:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
@@ -248,7 +263,7 @@ footer .username:before {
 }
 
 footer .menu-compare:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 10px;
@@ -259,7 +274,7 @@ footer .menu-compare:before {
 }
 
 footer .cart:before {
-    content: " ";
+    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 12px;
@@ -305,7 +320,7 @@ footer .cart:before {
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
 
     cursor: default;
@@ -325,7 +340,7 @@ footer .cart:before {
     font-weight: 900;
     font-size: 48px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
   }
   
@@ -347,7 +362,7 @@ footer .cart:before {
 
 .header-search input[type="search"] {
     font-weight: 200;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
     height: 43px;
     margin-top: -4px;
@@ -389,7 +404,7 @@ footer .cart:before {
     font-weight: 200;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
 
     border: 2px solid black;
@@ -484,7 +499,7 @@ li {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 3.5px;
+    letter-spacing: 3.6px;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -545,7 +560,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 36px;
 }
 
@@ -573,9 +588,9 @@ ul.catalogue:hover {
         
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
-    font-size: 179.2px;
+    font-size: 179px;
     color: rgb(255, 255, 255);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     line-height: 179px;
 
     z-index: 0;
@@ -654,7 +669,7 @@ ul.catalogue:hover {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.17px;
     line-height: 56px;
 }
 
@@ -663,7 +678,7 @@ ul.catalogue:hover {
 
     font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 2;
 }
 
@@ -686,7 +701,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 36px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.4px;
+    letter-spacing: 0.36px;
     line-height: 48px;
 }
 
@@ -695,7 +710,7 @@ ul.catalogue:hover {
     font-weight: 200;
     font-size: 13px;
     color: rgb(70, 70, 70);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.13px;
     line-height: 20px;
 }
 
@@ -721,7 +736,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 
     opacity: 1;
@@ -729,7 +744,7 @@ li.popular-item {
 
 .popular-item span:before {
     position: absolute;
-    content: " ";
+    content: "";
     top: 8px;
     width: 160px;
     height: 160px;
@@ -743,7 +758,7 @@ li.popular-item {
 
 .popular-item span:after {
     position: absolute;
-    content: " ";
+    content: "";
     top: 8px;
     left: 0;
     width: 160px;
@@ -817,7 +832,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.21px;
     line-height: 48px;
 }
 
@@ -832,7 +847,7 @@ li.popular-item {
     margin-top: 30px;
     width: 460px;
 
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 30px;
 }
 
@@ -917,7 +932,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 47px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.21px;
     line-height: 48px;
     text-transform: none;
 }
@@ -973,6 +988,7 @@ li.popular-item {
 
 .main-footer {
     position: relative;
+    min-width: 1240px;
     padding-top: 65px;
     padding-bottom: 65px;
     background: rgb(70, 70, 70);
@@ -1008,7 +1024,7 @@ li.popular-item {
     font-weight: 900;
     font-size: 48px;
     color: rgb(255, 198, 0);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.48px;
     line-height: 48px;
 }
 
@@ -1016,13 +1032,11 @@ li.popular-item {
     cursor: default;
 }
 
-
-
 .footer-menu {
     display: flex;
 
     color: rgb(255, 255, 255);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.15px;
     line-height: 36px;
 }
 
@@ -1075,7 +1089,6 @@ li.footer-secondary-menu-item:last-child {
     height: 7px;
     background-color: rgb(255, 198, 0);
 }
-
 
 .footer-services-list {
     display: flex;
@@ -1133,7 +1146,7 @@ li.footer-secondary-menu-item:last-child {
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
-    letter-spacing: 4px;
+    letter-spacing: 3.6px;
     line-height: 24px;
     text-transform: uppercase;
 }
@@ -1155,9 +1168,9 @@ li.footer-secondary-menu-item:last-child {
 }
 
 .breadcrumbs-item:after {
+    content: "";
     display: inline-block;
     vertical-align: middle;
-    content: "";
     width: 5px;
     height: 8px;
     margin-left: 15px;
@@ -1169,9 +1182,9 @@ li.footer-secondary-menu-item:last-child {
 }
 
 .breadcrumbs-item:last-child:after {
+    content: "";
     display: inline-block;
     vertical-align: middle;
-    content: "";
     background-image: none;
 }
 
@@ -1277,7 +1290,7 @@ a.breadcrumbs-current:hover {
     width: 43%;
 
     opacity: 0.2;
-    font-family: "Gilroy";
+    font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
@@ -1311,12 +1324,7 @@ a.breadcrumbs-current:hover {
 
 .filter-item.bluetooth {
     margin-top: 41px;
-    margin-bottom: 14px;
-}
-
-.filter-bluetooth {
-    margin-bottom: 20px;
-    display: block;
+    margin-bottom: 33px;
 }
 
 form.filter .input-button {
@@ -1329,7 +1337,7 @@ form.filter .input-button {
     font-weight: 200;
     font-size: 14px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.14px;
     line-height: 40px;
 }
 
@@ -1343,10 +1351,10 @@ form.filter .input-button {
 }
 
 .filter-input-checkbox:before {
+    content: "";
     position: absolute;
     left: 0;
     top: -3px;
-    content: "";
     display: inline-block;
     vertical-align: middle;
     width: 23px;
@@ -1439,7 +1447,7 @@ main h2 {
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 }
 
@@ -1554,7 +1562,7 @@ a.sort-order-desc{
     font-weight: 900;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.18px;
     line-height: 24px;
 }
 
@@ -1565,7 +1573,7 @@ a.sort-order-desc{
     font-weight: 200;
     font-size: 16px;
     color: rgb(70, 70, 70);
-    letter-spacing: 0.2px;
+    letter-spacing: 0.16px;
     line-height: 24px;
 }
 
@@ -1575,7 +1583,7 @@ a.sort-order-desc{
     font-weight: 200;
     font-size: 13px;
     color: rgb(0, 0, 0);
-    letter-spacing: 0.1px;
+    letter-spacing: 0.13px;
     line-height: 36px;
 }
 
@@ -1654,9 +1662,6 @@ a.sort-order-desc{
     padding-top: 80px;
 
     border-right: 7px solid black;
-
-    
-    
 }
 
 .services-toggle-item a {
@@ -1701,7 +1706,7 @@ a.sort-order-desc{
 }
 
 .services-toggle-item a:hover:before {
-    content: " ";
+    content: "";
     width: 100%;
     height: 40px;
 }
@@ -1754,7 +1759,7 @@ a.sort-order-desc{
 }
 
 .button:hover:before {
-    content: " ";
+    content: "";
     width: 100%;
     height: 40px;
 }
@@ -1797,7 +1802,7 @@ a.sort-order-desc{
 }
 
 .input-button:hover:before {
-    content: " ";
+    content: "";
     width: 100%;
     height: 40px;
 }
