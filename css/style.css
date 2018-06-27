@@ -1566,6 +1566,25 @@ a.sort-order-desc{
     line-height: 24px;
 }
 
+.gadget-new:before {
+    position: absolute;
+    content: "New";
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    top: 28px;
+    right: 24px;
+
+    font-family: "Gilroy", Verdana, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.1);
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .gadget-price {
     max-width: 80px;
 
