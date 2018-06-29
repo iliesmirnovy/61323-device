@@ -192,23 +192,64 @@ a {
     margin-right: 20px;
 }
 
+.footer-user-menu {
+    display: flex;
+    width: 412px;
+    justify-content: flex-end;
+    margin-right: 2px;
+}
+
+.footer-menu .user-menu,
+.footer-secondary-menu {
+    display: flex;
+}
+
+.footer-menu .user-menu {
+    margin-right: -15px;
+}
+
+li.footer-menu-item {
+    margin-left: 40px;
+}
+
+.footer-secondary-menu li.footer-secondary-menu-item {
+    margin-left: 41px;
+
+}
+
+.footer-user-menu li.footer-user-menu-item {
+    padding: 0 15px;
+    margin-right: -13px;
+}
+
+li.user-menu-item {
+    margin-left: 1px;
+}
+
+li.footer-secondary-menu-item:last-child {
+    margin-right: 0px;
+}
+
 .login-link:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
-    height: 12px;
+    height: 16px;
     margin-right: 10px;
     background-image: url(../img/svg/user.svg);
     background-repeat: no-repeat;
 }
+
+
+
 
 .username:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
     width: 13px;
-    height: 12px;
+    height: 16px;
     margin-right: 10px;
     background-image: url(../img/svg/user.svg);
     background-repeat: no-repeat;
@@ -223,7 +264,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     width: 10px;
-    height: 10px;
+    height: 13px;
     margin-right: 10px;
     background-image: url(../img/svg/compare.svg);
     background-repeat: no-repeat;
@@ -234,7 +275,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     width: 12px;
-    height: 12px;
+    height: 17px;
     margin-right: 10px;
     background-image: url(../img/svg/cart.svg);
     background-repeat: no-repeat;
@@ -244,8 +285,8 @@ footer .login-link:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 13px;
-    height: 12px;
+    width: 15px;
+    height: 16px;
     margin-right: 10px;
     background-image: url(../img/svg/user-yellow.svg);
     background-repeat: no-repeat;
@@ -255,8 +296,8 @@ footer .username:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 13px;
-    height: 12px;
+    width: 17px;
+    height: 17px;
     margin-right: 10px;
     background-image: url(../img/svg/user-yellow.svg);
     background-repeat: no-repeat;
@@ -267,7 +308,7 @@ footer .menu-compare:before {
     display: inline-block;
     vertical-align: middle;
     width: 10px;
-    height: 10px;
+    height: 12px;
     margin-right: 10px;
     background-image: url(../img/svg/compare-yellow.svg);
     background-repeat: no-repeat;
@@ -278,7 +319,7 @@ footer .cart:before {
     display: inline-block;
     vertical-align: middle;
     width: 12px;
-    height: 12px;
+    height: 15px;
     margin-right: 10px;
     background-image: url(../img/svg/cart-yellow.svg);
     background-repeat: no-repeat;
@@ -1044,25 +1085,7 @@ li.popular-item {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: -6px;
-}
-
-.footer-menu .user-menu,
-.footer-secondary-menu {
-    display: flex;
-}
-.footer-menu .user-menu {
-    margin-right: 40px;
-}
-
-li.footer-menu-item,
-li.footer-secondary-menu-item,
-li.user-menu-item {
-    margin-right: 40px;
-}
-
-li.footer-secondary-menu-item:last-child {
-    margin-right: 0px;
+    margin-top: -3px;
 }
 
 .footer-contacts-services {
@@ -1318,8 +1341,13 @@ a.breadcrumbs-current:hover {
 }
 
 .filter-color {
-    margin-bottom: 20px;
     display: block;
+    margin-bottom: 20px;
+}
+
+.filter-bluetooth {
+    display: block;
+    margin-bottom: 19px;
 }
 
 .filter-item.bluetooth {
@@ -1328,7 +1356,7 @@ a.breadcrumbs-current:hover {
 }
 
 form.filter .input-button {
-    margin-top: 17px;
+    margin-top: 0px;
 }
 
 .filter-input {
@@ -1522,6 +1550,8 @@ a.sort-order-desc{
 .gadget-item-picture {
     position: relative;
     margin-bottom: 24px;
+
+    cursor: pointer;
 }
 
 .gadget-image {
@@ -1564,6 +1594,8 @@ a.sort-order-desc{
     color: rgb(0, 0, 0);
     letter-spacing: 0.18px;
     line-height: 24px;
+
+    cursor: pointer;
 }
 
 .gadget-new:before {
@@ -1625,16 +1657,17 @@ a.sort-order-desc{
 }
 
 .pagination-item:first-child {
-    padding-left: 15px;
+    padding-left: 16px;
 }
 
 .pagination-item:last-child {
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 .pagination-numbers {
     display: flex;
     align-items: center;
+    margin-left: 7px;
 }
 
 .pagination-item a {
