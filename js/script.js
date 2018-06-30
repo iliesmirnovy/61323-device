@@ -41,22 +41,59 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 	var button = document.querySelector(".write-us-button");
 	var modalFeedback = document.querySelector(".modal-feedback");
 	var closeModal = document.querySelector(".write-us-close");
+	var form = modalFeedback.querySelector("form");
+	var name = modalFeedback.querySelector("[name=name]");
+	var email = modalFeedback.querySelector("[name=e-mail]");
+	var	message = modalFeedback.querySelector("[name=message]");
+	var isStorageSupport = true;
+	var storage = "";
 
-	button.addEventListener("click", function(evt) {
+	try {
+		storage = localStorage.getItem("name");
+		storage = localStorage.getItem("email");
+	} catch (err) {
+		isStorageSupport = false;	
+	}
+
+	button.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		modalFeedback.classList.remove("hidden");
 
+		if (storage) {
+			name.value = storage;
+			email.valie = storage;
+			message.focus();
+		} else {
+			name.focus();
+		}
+
 		closeModal.addEventListener("click", function closeClickHandler () {
 			modalFeedback.classList.add("hidden");
+			modalFeedback.classList.remove("modal-error");
 			closeModal.removeEventListener("click", closeClickHandler);
-		})
+		});
 		document.addEventListener("keydown", function pressEscHandler(evt) {
 			if (evt.keyCode === 27) {
 				modalFeedback.classList.add("hidden");
+				modalFeedback.classList.remove("modal-error");
 			}
 			document.removeEventListener("keydown", pressEscHandler);
-		})
-	})
+		});
+		form.addEventListener("submit", function(evt) {
+			if (!name.value || !email.value || !message.value) {
+				evt.preventDefault();
+				modalFeedback.classList.remove("modal-error");
+				modalFeedback.offsetWidth = modalFeedback.offsetWidth;
+				modalFeedback.classList.add("modal-error");	
+			}
+			else {
+				if (isStorageSupport) {
+					localStorage.setItem("name", name.value);
+					localStorage.setItem("email", email.value);
+				}
+			}
+		});
+	});
 })();
 
 (function manageModalMap() {
