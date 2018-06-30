@@ -100,6 +100,7 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 	var miniMap = document.querySelector(".contact-map");
 	var modalMap = document.querySelector(".modal-map");
 	var closeModal = document.querySelector(".map-close");
+	var mapLink = document.querySelector(".contact-map-link");
 
 	miniMap.addEventListener("click", function(evt) {
 		evt.preventDefault();

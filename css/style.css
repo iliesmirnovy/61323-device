@@ -1980,6 +1980,22 @@ a.sort-order-desc{
     box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.modal-map p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    margin: 0;
+}
+
 .map-close,
 .write-us-close {
     position: absolute;
@@ -1987,6 +2003,7 @@ a.sort-order-desc{
     height: 55px;
     top: 20px;
     right: 20px;
+    z-index: 3;
 
     font-size: 0;
 
