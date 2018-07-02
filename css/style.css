@@ -412,12 +412,14 @@ footer .cart:before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: -35px;
-    margin-bottom: 9px;
+    margin-top: -28px;
+    margin-bottom: 17px;
 }
 
 .header-search {
     width: 540px;
+    position: relative;
+    top: -7px;
 }
 
 .header-search input[type="search"] {
@@ -1162,6 +1164,7 @@ li.popular-item {
     color: rgb(255, 255, 255);
     letter-spacing: 0;
     line-height: 30px;
+}
 
 .footer-address:after {
     content: "";
