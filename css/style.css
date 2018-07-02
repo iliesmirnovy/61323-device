@@ -143,7 +143,6 @@ a {
 
 .main-header {
     min-width: 1240px;
-    ;
 }
 
 .header-container-main {
@@ -372,7 +371,7 @@ footer .cart:before {
 .header-logo {
     position: relative;
     top: -25px;
-    left: -4px;
+    left: -3px;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
@@ -389,7 +388,7 @@ footer .cart:before {
 .header-logo-link {
     position: relative;
     top: -25px;
-    left: -4px;
+    left: -3px;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 48px;
@@ -413,8 +412,8 @@ footer .cart:before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: -27px;
-    margin-bottom: 15px;
+    margin-top: -35px;
+    margin-bottom: 9px;
 }
 
 .header-search {
@@ -443,6 +442,12 @@ footer .cart:before {
 .header-search input[type="search"]:focus {
     opacity: 1;
     border-bottom: 2px solid black;
+}
+
+.header-search-item {
+    position: relative;
+    top: 7px;
+    left: -2px;
 }
 
 .header-search-item:before {
@@ -730,7 +735,7 @@ ul.catalogue:hover {
 }
 
 .feature-item {
-    margin-right: 75px;
+    margin-right: 77px;
 }
 
 .feature-title {
@@ -1045,7 +1050,7 @@ li.popular-item {
 
 .contact-map {
     padding-top: 10px;
-    margin-bottom: 62px;
+    margin-bottom: 68px;
 }
 
 .delivery-partners-list {
@@ -1157,7 +1162,6 @@ li.popular-item {
     color: rgb(255, 255, 255);
     letter-spacing: 0;
     line-height: 30px;
-}
 
 .footer-address:after {
     content: "";
@@ -1401,16 +1405,18 @@ a.breadcrumbs-current:hover {
 .filter-color {
     display: block;
     margin-bottom: 20px;
+    padding-top: 2px;
 }
 
 .filter-bluetooth {
     display: block;
     margin-bottom: 19px;
+    padding-top: 2px;
 }
 
 .filter-item.bluetooth {
     margin-top: 41px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 form.filter .input-button {
@@ -1502,6 +1508,7 @@ form.filter .input-button {
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     line-height: 60px;
+    word-spacing: -3px;
 }
 
 .filter-wrapper {
@@ -1681,7 +1688,6 @@ a.sort-order-desc {
     color: rgb(0, 0, 0);
     letter-spacing: 0.18px;
     line-height: 24px;
-    cursor: pointer;
 }
 
 .gadget-new:before {
@@ -1873,8 +1879,8 @@ a.sort-order-desc {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
     height: 40px;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -1960,6 +1966,10 @@ a.sort-order-desc {
     z-index: 2;
 }
 
+.write-us-button.button {
+    padding: 0 40px;
+}
+
 .services-toggle-item a:active {
     color: rgb(247, 225, 130);
     background-color: rgb(0, 0, 0);
@@ -1996,7 +2006,7 @@ a.sort-order-desc {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 100px;
+    padding: 78px 100px;    
 }
 
 .write-us-item {
@@ -2042,9 +2052,16 @@ a.sort-order-desc {
     height: 50px;
 }
 
+.write-us-message {
+    margin-top: 20px;
+}
+
 .write-us textarea {
     width: 760px;
     height: 156px;
+    max-width: 760px;
+    max-height: 156px;
+    margin-bottom: 28px;
 }
 
 .write-us input[type="text"]:hover,
