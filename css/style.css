@@ -68,13 +68,21 @@ body {
 }
 
 section.filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    flex-basis: 326px;
+    -ms-flex-preferred-size: 326px;
+        flex-basis: 326px;
     min-width: 272px;
     position: relative;
     z-index: 0;
@@ -220,7 +228,7 @@ a {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-right: -37px;
+    margin-right: -38px;
 }
 
 .footer-menu .user-menu,
@@ -239,7 +247,7 @@ li.footer-menu-item {
 }
 
 .footer-secondary-menu li.footer-secondary-menu-item {
-    margin-left: 41px;
+    margin-left: 39px;
 }
 
 .footer-user-menu li.footer-user-menu-item {
@@ -261,7 +269,7 @@ li.footer-secondary-menu-item:last-child {
     vertical-align: middle;
     width: 13px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 14px;
     background-image: url(../img/svg/user.svg);
     background-repeat: no-repeat;
 }
@@ -371,7 +379,7 @@ footer .cart:before {
 }
 
 .main-menu-guarantee {
-    width: 220px;
+    width: 218px;
 }
 
 .main-menu-contact {
@@ -678,7 +686,7 @@ ul.catalogue:focus {
 .slider-item:before {
     position: absolute;
     top: -45px;
-    right: 50px;
+    right: 46px;
     content: attr(data-number);
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -757,7 +765,7 @@ ul.catalogue:focus {
     -ms-flex-direction: row;
     flex-direction: row;
     width: 550px;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .feature-item {
@@ -800,7 +808,8 @@ ul.catalogue:focus {
 }
 
 .feature-text-title {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    margin-left: 1px;   
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 36px;
@@ -810,6 +819,7 @@ ul.catalogue:focus {
 }
 
 .feature-text-description {
+    margin-left: 2px;
     font-family: "Open Sans", Verdana, Arial, sans-serif;
     font-weight: 200;
     font-size: 13px;
@@ -831,7 +841,7 @@ ul.catalogue:focus {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 182px;
+    margin-bottom: 180px;
     margin-top: 52px;
 }
 
@@ -842,7 +852,7 @@ li.popular-item {
 .popular-item a {
     display: block;
     width: 160px;
-    padding-top: 200px;
+    padding-top: 202px;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -1194,6 +1204,10 @@ li.popular-item {
     line-height: 30px;
 }
 
+.footer-tel {
+    margin-right: -1px;
+}
+
 .footer-address:after {
     content: "";
     position: absolute;
@@ -1218,8 +1232,8 @@ li.popular-item {
     width: 462px;
     max-width: 650px;
     padding: 0;
-    margin-right: 37px;
-    margin-top: 22px;
+    margin-right: 35px;
+    margin-top: 21px;
 }
 
 .footer-social {
@@ -1409,7 +1423,7 @@ a.breadcrumbs-current:hover {
 .price-controls label {
     display: inline-block;
     vertical-align: middle;
-    width: 43%;
+    width: 44%;
     opacity: 0.2;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 200;
@@ -2048,7 +2062,7 @@ button.services-button {
 }
 
 .write-us-button.button {
-    padding: 0 40px;
+    padding: 0 41px;
 }
 
 .services-toggle-item a:active {
