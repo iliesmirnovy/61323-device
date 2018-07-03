@@ -29,7 +29,7 @@ function switchSlide(slideAndButtonNumber, sliderControls, slides) {
 
 (function manageServicesSlider() {
 	var sliderWrap = document.querySelector(".services-wrapper");
-	var sliderControls = sliderWrap.querySelectorAll(".services-toggle-item a");
+	var sliderControls = sliderWrap.querySelectorAll(".services-toggle-item button");
 	var slides = sliderWrap.querySelectorAll(".services-slider-item");
 
 	switchSlide(0, sliderControls, slides);
