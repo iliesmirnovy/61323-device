@@ -6,7 +6,7 @@
       <meta name="format-detection" content="telephone=no">
       <title>HTML Academy: Девайс</title>
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   </head>
   
   <body>
@@ -16,7 +16,7 @@
               <nav class="main-navigation">
                   <a class="header-logo non-link">DEVICE</a>
                   <div class="user-menu-container">
-                      <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+                      <form class="header-search" action="https://echo.htmlacademy.ru" method="get" autocomplete="off">
                           <p class="header-search-item">
                               <input type="search" class="search-input" name="search" id="header-search" placeholder="Поиск по сайту">
                               <label class="visually-hidden" for="header-search">Поиск по сайту</label>
@@ -34,7 +34,7 @@
                       </div>
                   </div>
                   <ul class="main-menu">
-                      <li class="main-menu-item main-menu-catalogue"><a href="#">Каталог товаров</a><span class="catalogue-more">+</span>
+                      <li class="main-menu-item main-menu-catalogue"><a href="#">Каталог товаров</a>
                           <ul class="catalogue">
                               <li class="catalogue-column">
                                   <a class="catalogue-item" href="#">Виртуальная реальность</a>
@@ -190,9 +190,9 @@
                   <h2 class="visually-hidden">Сервисы</h2>
                   <div class="services-wrapper">
                       <ul class="services-slider-toggle">
-                          <li class="services-toggle-item"><a class="active">Доставка</a></li>
-                          <li class="services-toggle-item"><a>Гарантия</a></li>
-                          <li class="services-toggle-item"><a>Кредит</a></li>
+                          <li class="services-toggle-item"><a href="#" class="active">Доставка</a></li>
+                          <li class="services-toggle-item"><a href="#">Гарантия</a></li>
+                          <li class="services-toggle-item"><a href="#">Кредит</a></li>
                       </ul>
                       <ul class="services-slider-list">
                           <li class="services-slider-item services-delivery">
@@ -218,10 +218,10 @@
               <div class="center-container-1160">
                   <h2 class="visually-hidden">Список брендов</h2>
                   <ul class="logotypes-list">
-                      <li class="logotype-item"><img src="img/logotypes/logo-1.jpg" width="260" height="100" alt="DJI"></li>
-                      <li class="logotype-item"><img src="img/logotypes/logo-2.jpg" width="260" height="100" alt="SP GADGETS"></li>
-                      <li class="logotype-item"><img src="img/logotypes/logo-3.jpg" width="260" height="100" alt="GO PRO"></li>
-                      <li class="logotype-item"><img src="img/logotypes/logo-4.jpg" width="260" height="100" alt="VIVE"></li>
+                      <li class="logotype-item"><a href="#"><img src="img/logotypes/logo-1.jpg" width="260" height="100" alt="DJI"></a></li>
+                      <li class="logotype-item"><a href="#"><img src="img/logotypes/logo-2.jpg" width="260" height="100" alt="SP GADGETS"></a></li>
+                      <li class="logotype-item"><a href="#"><img src="img/logotypes/logo-3.jpg" width="260" height="100" alt="GO PRO"></a></li>
+                      <li class="logotype-item"><a href="#"><img src="img/logotypes/logo-4.jpg" width="260" height="100" alt="VIVE"></a></li>
                   </ul>
               </div>
           </section>
@@ -234,9 +234,9 @@
                       <p class="info-text">Мы можем доставить ваш товар в самые отдаленные точки
                           <br> России! DEVICE работает со многими транспортными компаниями:</p>
                       <ul class="delivery-partners-list">
-                          <li class="delivery-item">Деловые Линии</li>
-                          <li class="delivery-item">Автотрейдинг</li>
-                          <li class="delivery-item">ЖелДорЭкспедиция</li>
+                          <li class="delivery-item"><a href="#">Деловые Линии</a></li>
+                          <li class="delivery-item"><a href="#">Автотрейдинг</a></li>
+                          <li class="delivery-item"><a href="#">ЖелДорЭкспедиция</a></li>
                       </ul>
                       <a href="#" class="button">Подробнее о нас</a>
                   </section>
@@ -244,9 +244,9 @@
                       <h2 class="contact-title">Контакты</h2>
                       <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                       <div class="contact-map">
-                          <a class="contact-map-link" href="#"><img src="img/contacts/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург"></a>
+                          <a class="contact-map-link" href="contact.html"><img src="img/contacts/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей, дом 15, Санкт-Петербург"></a>
                       </div>
-                      <a class="write-us-button button" href="#">Напишите нам</a>
+                      <a class="write-us-button button" href="writeus.html">Напишите нам</a>
                   </section>
               </div>
           </div>
