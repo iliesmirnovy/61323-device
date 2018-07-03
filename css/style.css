@@ -68,7 +68,13 @@ body {
 }
 
 section.filter {
-    flex-grow: 1.4;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    flex-basis: 326px;
     min-width: 272px;
     position: relative;
     z-index: 0;
@@ -112,7 +118,9 @@ a {
 }
 
 .custom-container-1 {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 760px;
     margin-left: 70px;
     margin-right: auto;
@@ -613,7 +621,8 @@ ul.catalogue {
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 24px;
     padding-bottom: 25px;
     position: relative;
@@ -820,7 +829,8 @@ ul.catalogue:focus {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 182px;
     margin-top: 52px;
 }
@@ -1198,7 +1208,8 @@ li.popular-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: center;
@@ -1444,7 +1455,7 @@ a.breadcrumbs-current:hover {
 }
 
 form.filter .input-button {
-    margin-top: 0px;
+    padding-top: -2px;
 }
 
 .filter-input {
@@ -1492,7 +1503,7 @@ form.filter .input-button {
 .filter-option input[type="checkbox"]:focus+label::before,
 .filter-option input[type="radio"]:focus+label::before
 {
-  outline: 2px solid rgb(59, 153, 252);
+  outline: 1px solid rgb(59, 153, 252);
   opacity: 0.6;
 }
 
@@ -1561,10 +1572,9 @@ form.filter .input-button {
 }
 
 form.filter {
-    margin-left: auto;
     padding-top: 65px;
-    width: 200px;
-    padding-right: 15%;
+    width: 269px;
+    
 }
 
 main h2 {
@@ -1579,7 +1589,7 @@ main h2 {
 
 .filter-title {
     width: 342px;
-    padding-left: 5.2%;
+    padding-left: 60px;
 }
 
 .sort-title {
@@ -1821,8 +1831,11 @@ a.sort-order-desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
