@@ -230,7 +230,7 @@ a {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-right: -38px;
+    margin-right: -35px;
 }
 
 .footer-menu .user-menu,
@@ -407,7 +407,7 @@ footer .cart:before {
 
 .header-logo-link {
     position: relative;
-    top: -25px;
+    top: -22px;
     left: -3px;
     font-family: "Gilroy", Verdana, Arial, sans-serif;
     font-weight: 900;
@@ -1193,6 +1193,7 @@ a:focus > span:before {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: -3px;
+    margin-left: -4px;
 }
 
 .footer-contacts-services {
@@ -1328,7 +1329,7 @@ a:focus > span:before {
     vertical-align: middle;
     width: 5px;
     height: 8px;
-    margin-left: 16px;
+    margin-left: 12px;
     margin-right: 20px;
     background-image: url(../img/svg/nav-arrow.svg);
     background-repeat: no-repeat;
@@ -1740,13 +1741,6 @@ a.sort-order-desc {
     z-index: 2;
     opacity: 0;
 }
-
-/*
-.gadget-buy:hover,
-.gadget-buy:focus {
-    opacity: 1;
-    background-color: rgba(238, 238, 238, 0.7);
-} */
 
 .gadget-item:focus-within .gadget-buy {
     background: rgb(238, 238, 238, 0.7);
